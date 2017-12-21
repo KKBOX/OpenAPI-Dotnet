@@ -8,10 +8,10 @@
     <owners>$author$</owners>
     <licenseUrl>https://github.com/KKBOX/OpenAPI-Dotnet#license</licenseUrl>
     <projectUrl>https://github.com/KKBOX/OpenAPI-Dotnet</projectUrl>
-    <iconUrl>https://github.com/KKBOX/OpenAPI-Dotnet/Doc/StoreLogo.png</iconUrl>
+    <iconUrl>https://github.com/KKBOX/OpenAPI-Dotnet/raw/master/Doc/StoreLogo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>1.0.0: Support KKBOX Open API.</releaseNotes>
+    <releaseNotes>1.0.1.1: Support KKBOX Open API and fixed some issues.</releaseNotes>
     <copyright>Copyright © KKBOX International Limited All Rights Reserveds 2017</copyright>
     <tags>KKBOX OpenAPI Music</tags>
 	<dependencies>
