@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/KKBOX/OpenAPI-Dotnet#license</licenseUrl>
+    <projectUrl>https://github.com/KKBOX/OpenAPI-Dotnet</projectUrl>
+    <iconUrl>https://github.com/KKBOX/OpenAPI-Dotnet/Doc/StoreLogo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>1.0.0: Support KKBOX Open API.</releaseNotes>
+    <copyright>Copyright © KKBOX International Limited All Rights Reserveds 2017</copyright>
+    <tags>KKBOX OpenAPI Music</tags>
+	<dependencies>
+        <dependency id="Newtonsoft.Json" version="10.0.3" />
+    </dependencies>
+  </metadata>
+</package>

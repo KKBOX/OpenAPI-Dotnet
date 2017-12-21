@@ -1,0 +1,27 @@
+﻿<Window x:Class="OpenAPI.App.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpenAPI.App.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <Button x:Name="OAuthButton" Content="Get Access Token (must be clicked before any functions)" Click="OAuthButton_Click" />
+                <Button x:Name="AlbumButton" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Album sample" Click="AlbumButton_Click" />
+                <Button x:Name="ArtistButton" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Artist sample" Click="ArtistButton_Click" />
+                <Button x:Name="ChartsButon" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Charts sample" Click="ChartsButon_Click" />
+                <Button x:Name="FeaturedPlaylistsButton" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="FeaturedPlaylists sample" Click="FeaturedPlaylistsButton_Click"/>
+                <Button x:Name="FeaturedPlaylistCategoriesButon" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Featured Playlist Categories sample" Click="FeaturedPlaylistCategoriesButon_Click" />
+                <Button x:Name="MoodStationsButon" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Mood Stations sample" Click="MoodStationsButon_Click" />
+                <Button x:Name="GenreStationsButon" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Genre Stations sample" Click="GenreStationsButon_Click" />
+                <Button x:Name="NewreleaseButon" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="New release  sample" Click="NewreleaseButon_Click" />
+                <Button x:Name="NewHitsPlaylistsButon" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="NewHitsPlaylists sample" Click="NewHitsPlaylistsButon_Click"/>
+                <Button x:Name="TrackButton" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Track sample" Click="TrackButton_Click" />
+                <Button x:Name="SearchButon" IsEnabled="{Binding IsEanbled, Mode=OneWay}" Content="Search sample" Click="SearchButon_Click" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,37 @@
+# References
+
+## [KKBOX.OpenAPI](KKBOX.OpenAPI.md)
+
+- [`KKBOXAPI`](KKBOX.OpenAPI.md#kkboxapi)
+- [`KKBOXOAuth`](KKBOX.OpenAPI.md#kkboxoauth)
+
+## [KKBOX.OpenAPI.ServiceModel](KKBOX.OpenAPI.ServiceModel.md)
+
+- [`AlbumData`](KKBOX.OpenAPI.ServiceModel.md#albumdata)
+- [`AlbumOffsetData`](KKBOX.OpenAPI.ServiceModel.md#albumoffsetdata)
+- [`APIStatus`](KKBOX.OpenAPI.ServiceModel.md#apistatus)
+- [`ArtistData`](KKBOX.OpenAPI.ServiceModel.md#artistdata)
+- [`BaseItemData`](KKBOX.OpenAPI.ServiceModel.md#baseitemdata)
+- [`BaseItemOffsetData`](KKBOX.OpenAPI.ServiceModel.md#baseitemoffsetdata)
+- [`ErrorData`](KKBOX.OpenAPI.ServiceModel.md#errordata)
+- [`FeaturedPlaylistOfCategoryData`](KKBOX.OpenAPI.ServiceModel.md#featuredplaylistofcategorydata)
+- [`ImageData`](KKBOX.OpenAPI.ServiceModel.md#imagedata)
+- [`KKOAuthResponse`](KKBOX.OpenAPI.ServiceModel.md#kkoauthresponse)
+- [`NewReleaseData`](KKBOX.OpenAPI.ServiceModel.md#newreleasedata)
+- [`OAuthTokenData`](KKBOX.OpenAPI.ServiceModel.md#oauthtokendata)
+- [`OffsetData<T>`](KKBOX.OpenAPI.ServiceModel.md#offsetdatat)
+- [`OwnerData`](KKBOX.OpenAPI.ServiceModel.md#ownerdata)
+- [`PagingData`](KKBOX.OpenAPI.ServiceModel.md#pagingdata)
+- [`ParseResult<T>`](KKBOX.OpenAPI.ServiceModel.md#parseresultt)
+- [`PlaylistData`](KKBOX.OpenAPI.ServiceModel.md#playlistdata)
+- [`PlaylistOffsetData`](KKBOX.OpenAPI.ServiceModel.md#playlistoffsetdata)
+- [`SearchResultData`](KKBOX.OpenAPI.ServiceModel.md#searchresultdata)
+- [`SearchType`](KKBOX.OpenAPI.ServiceModel.md#searchtype)
+- [`StationData`](KKBOX.OpenAPI.ServiceModel.md#stationdata)
+- [`StationListData`](KKBOX.OpenAPI.ServiceModel.md#stationlistdata)
+- [`StationOffsetData`](KKBOX.OpenAPI.ServiceModel.md#stationoffsetdata)
+- [`SummaryData`](KKBOX.OpenAPI.ServiceModel.md#summarydata)
+- [`TerritoryType`](KKBOX.OpenAPI.ServiceModel.md#territorytype)
+- [`TrackData`](KKBOX.OpenAPI.ServiceModel.md#trackdata)
+- [`TrackOffsetData`](KKBOX.OpenAPI.ServiceModel.md#trackoffsetdata)
+
