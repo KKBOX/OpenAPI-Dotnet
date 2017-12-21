@@ -6,8 +6,8 @@
 1. It should be able to use with Visual Studio 2017.
 
 ### Use Nuget to install the SDK
-- Universal Windows Platform: [![Download](https://api.bintray.com/packages/kkboxorg/maven/openapideveloper/images/download.svg)](https://www.nuget.org/packages/KKBOX.OpenAPI.Universal)
-- .NET Framework: [![Download](https://api.bintray.com/packages/kkboxorg/maven/openapideveloper/images/download.svg)](https://www.nuget.org/packages/KKBOX.OpenAPI.Net45/)
+- Universal Windows Platform: [KKBOX.OpenAPI.Universal](https://www.nuget.org/packages/KKBOX.OpenAPI.Universal)
+- .NET Framework: [KKBOX.OpenAPI.Net45](https://www.nuget.org/packages/KKBOX.OpenAPI.Net45/)
 
 ### Prepare client ID & client secret
 Browse [KKBOX Developer Website](https://developer.kkbox.com/) and create an developer account, then create an app to get the client ID and client secret.
@@ -25,7 +25,7 @@ Browse [KKBOX Developer Website](https://developer.kkbox.com/) and create an dev
 
 ```csharp
 // Request to get access token
-var authResult = await KKBOXOAuth.SignInAsync(clientId, clientSecret, redirectUri);
+var authResult = await KKBOXOAuth.SignInAsync(clientId, clientSecret);
 string accessToken = authResult.Content.AccessToken;
 ```
 
