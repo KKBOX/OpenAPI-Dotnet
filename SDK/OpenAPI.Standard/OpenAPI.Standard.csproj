@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <RootNamespace>KKBOX.OpenAPI</RootNamespace>
+    <Description>KKBOX Open API SDK supported .NET Standard 2.0+. Helper developer to easy use.</Description>
+    <Version>1.0.1</Version>
+    <PackageId>KKBOX.OpenAPI.Standard</PackageId>
+    <Company>KKBOX International Limited</Company>
+    <Product>KKBOX.OpenAPI.Standard</Product>
+    <Authors>KKBOX International Limited</Authors>
+    <PackageLicenseUrl>https://github.com/KKBOX/OpenAPI-Dotnet#license</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/KKBOX/OpenAPI-Dotnet</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/KKBOX/OpenAPI-Dotnet/raw/master/Doc/StoreLogo.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/KKBOX/OpenAPI-Dotnet</RepositoryUrl>
+    <PackageTags>KKBOX OpenAPI Music</PackageTags>
+    <FileVersion>1.0.1.2</FileVersion>
+    <AssemblyVersion>1.0.1.2</AssemblyVersion>
+    <PackageReleaseNotes>1.0.1.2: Support KKBOX Open API and fixed some issues.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright © 2017 KKBOX All Rights Reserved.</Copyright>
+  </PropertyGroup>
+
+  <Import Project="..\OpenAPI.Shared\OpenAPI.Shared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+</Project>
