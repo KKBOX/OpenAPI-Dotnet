@@ -112,9 +112,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Controls\StoryboardExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controls\WebAuthorizeDialog\WebAuthorizeDialog.cs" />
     <EmbeddedResource Include="Properties\OpenAPI.Universal.rd.xml" />
   </ItemGroup>
   <ItemGroup>
