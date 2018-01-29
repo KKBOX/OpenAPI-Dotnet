@@ -1,0 +1,2 @@
+IF EXIST ".\bin\Release\netstandard1.4\KKBOX.OpenAPI.Standard.dll" copy ".\bin\Release\netstandard1.4\KKBOX.OpenAPI.Standard.dll" "..\..\\MakeDoc"
+IF EXIST ".\bin\Release\netstandard1.4\KKBOX.OpenAPI.Standard.XML" copy ".\bin\Release\netstandard1.4\KKBOX.OpenAPI.Standard.XML" "..\..\\MakeDoc"

@@ -1,6 +1,7 @@
 ﻿using KKBOX.OpenAPI.ServiceModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json.Linq;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
@@ -273,8 +274,17 @@ namespace KKBOX.OpenAPI.Test
 
                 while (true)
                 {
-                    var nextPlaylistResult = await OpenAPI.GetPlaylistsOfFeaturedPlaylistCategoryAsync(item.Id, playlistPaging.Limit, playlistPaging.Offset);
-                    var nextPlaylist = nextPlaylistResult.Content;
+                    PlaylistOffsetData nextPlaylist = null;
+                    try
+                    {
+                        var nextPlaylistResult = await OpenAPI.GetPlaylistsOfFeaturedPlaylistCategoryAsync(item.Id, playlistPaging.Limit, playlistPaging.Offset);
+                        nextPlaylist = nextPlaylistResult.Content;
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine(ex);
+                        continue;
+                    }
 
                     foreach (var playlist in nextPlaylist.Data)
                     {
@@ -395,7 +405,7 @@ namespace KKBOX.OpenAPI.Test
 
                 if (string.IsNullOrEmpty(newReleaseCategory.Paging.Next))
                 {
-                    continue;
+                    break;
                 }
 
                 categoryPaging = newReleaseCategory.Paging;

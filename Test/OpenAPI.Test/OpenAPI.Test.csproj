@@ -64,9 +64,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\OpenAPI.Net45\OpenAPI.Net45.csproj">
-      <Project>{9e50e6d1-2ad3-4aef-9d6e-f40090c3b331}</Project>
-      <Name>OpenAPI.Net45</Name>
+    <ProjectReference Include="..\..\SDK\OpenAPI.Standard\OpenAPI.Standard.csproj">
+      <Project>{2fd09127-e2af-43ab-865d-1320a30de80c}</Project>
+      <Name>OpenAPI.Standard</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

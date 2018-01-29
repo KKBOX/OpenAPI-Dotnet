@@ -129,13 +129,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.4.0</Version>
+      <Version>6.0.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\OpenAPI.Universal\OpenAPI.Universal.csproj">
-      <Project>{751afa91-f595-42bc-a1df-d4fae84c68d4}</Project>
-      <Name>OpenAPI.Universal</Name>
+    <ProjectReference Include="..\..\SDK\OpenAPI.Standard\OpenAPI.Standard.csproj">
+      <Project>{2fd09127-e2af-43ab-865d-1320a30de80c}</Project>
+      <Name>OpenAPI.Standard</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\OpenAPI.App.Shared\OpenAPI.App.Shared.projitems" Label="Shared" />

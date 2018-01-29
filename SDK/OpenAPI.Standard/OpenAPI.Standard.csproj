@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFrameworks>netstandard1.4;uap10.0;net452;net461</TargetFrameworks>
     <RootNamespace>KKBOX.OpenAPI</RootNamespace>
-    <Description>KKBOX Open API SDK supported .NET Standard 2.0+. Helper developer to easy use.</Description>
-    <Version>1.0.1</Version>
+    <Description>KKBOX Open API SDK supported .NET Standard 1.4+. Helper developer to easy use.</Description>
+    <Version>1.0.1.3</Version>
     <PackageId>KKBOX.OpenAPI.Standard</PackageId>
     <Company>KKBOX International Limited</Company>
     <Product>KKBOX.OpenAPI.Standard</Product>
@@ -14,18 +14,53 @@
     <PackageIconUrl>https://github.com/KKBOX/OpenAPI-Dotnet/raw/master/Doc/StoreLogo.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/KKBOX/OpenAPI-Dotnet</RepositoryUrl>
     <PackageTags>KKBOX OpenAPI Music</PackageTags>
-    <FileVersion>1.0.1.2</FileVersion>
-    <AssemblyVersion>1.0.1.2</AssemblyVersion>
-    <PackageReleaseNotes>1.0.1.2: Support KKBOX Open API and fixed some issues.</PackageReleaseNotes>
+    <FileVersion>1.0.1.3</FileVersion>
+    <AssemblyVersion>1.0.1.3</AssemblyVersion>
+    <PackageReleaseNotes>1.0.1.3: Support .net standard 1.4 and fixed some issues.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Copyright>Copyright © 2017 KKBOX All Rights Reserved.</Copyright>
+    <AssemblyName>KKBOX.OpenAPI.Standard</AssemblyName>
   </PropertyGroup>
-
-  <Import Project="..\OpenAPI.Shared\OpenAPI.Shared.projitems" Label="Shared" />
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'uap10.0'">
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <NugetTargetMoniker>UAP,Version=v10.0</NugetTargetMoniker>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <TargetFrameworkIdentifier>.NETCore</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <DefineConstants>$(DefineConstants);WINDOWS_UWP</DefineConstants>
+    <LanguageTargets>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets</LanguageTargets>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.5" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'" />
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.4|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.4\KKBOX.OpenAPI.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.4|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.4\KKBOX.OpenAPI.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <Target Name="AfterBuild" AfterTargets="Build">
+    <Exec Command="./move_dll_file.bat" />
+    <Exec command="../../MakeDoc/generate_markdown.bat" />
+  </Target>
 </Project>
