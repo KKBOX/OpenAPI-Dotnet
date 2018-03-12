@@ -32,11 +32,14 @@ string accessToken = authResult.Content.AccessToken;
 - Use KKBOX Open API:
 
 ```csharp
+KKBOXAPI openAPI = new KKBOXAPI();
 // Must setting access token
-KKBOXAPI.AccessToken = accessToken;
+openAPI.AccessToken = accessToken;
+// Must setting user territory
+OpenAPI.TerritoryType = TerritoryType.TW;
 
 // example get album metadata
-var album = await OpenAPI.GetAlbumAsync(albumId);
+var album = await openAPI.GetAlbumAsync(albumId);
 ```
 
 - Reference [Sample](Sample/OpenAPI.App.Shared/MainPageViewModel.cs) to learn how to use the SDK.
