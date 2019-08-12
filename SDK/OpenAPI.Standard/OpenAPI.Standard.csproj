@@ -1,30 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.4;uap10.0;net452;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;uap10.0;net452;net461</TargetFrameworks>
     <RootNamespace>KKBOX.OpenAPI</RootNamespace>
     <Description>KKBOX Open API SDK supported .NET Standard 1.4+. Helper developer to easy use.</Description>
-    <Version>1.0.1.3</Version>
+    <Version>1.0.1.5</Version>
     <PackageId>KKBOX.OpenAPI.Standard</PackageId>
     <Company>KKBOX International Limited</Company>
     <Product>KKBOX.OpenAPI.Standard</Product>
     <Authors>KKBOX International Limited</Authors>
-    <PackageLicenseUrl>https://github.com/KKBOX/OpenAPI-Dotnet#license</PackageLicenseUrl>
+    <PackageLicenseUrl>https://developer.kkbox.com/#/tos</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/KKBOX/OpenAPI-Dotnet</PackageProjectUrl>
     <PackageIconUrl>https://github.com/KKBOX/OpenAPI-Dotnet/raw/master/Doc/StoreLogo.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/KKBOX/OpenAPI-Dotnet</RepositoryUrl>
     <PackageTags>KKBOX OpenAPI Music</PackageTags>
-    <FileVersion>1.0.1.3</FileVersion>
-    <AssemblyVersion>1.0.1.3</AssemblyVersion>
-    <PackageReleaseNotes>1.0.1.3: Support .net standard 1.4 and fixed some issues.</PackageReleaseNotes>
+    <FileVersion>1.0.1.5</FileVersion>
+    <AssemblyVersion>1.0.1.5</AssemblyVersion>
+    <PackageReleaseNotes>1.0.1.5: Support .net standard 2.0 and fixed some issues.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Copyright>Copyright © 2017 KKBOX All Rights Reserved.</Copyright>
+    <Copyright>Copyright © 2019 KKBOX All Rights Reserved.</Copyright>
     <AssemblyName>KKBOX.OpenAPI.Standard</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
@@ -46,7 +46,7 @@
     <LanguageTargets>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets</LanguageTargets>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.7" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.8" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" />
