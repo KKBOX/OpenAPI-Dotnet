@@ -7,7 +7,7 @@
 
 ### Use Nuget to install the SDK
 - [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/KKBOX.OpenAPI.Standard/)
-- .NET Standard 1.4, .NET Framework 4.5/6.1 and Universal Windows Platform.
+- .NET Standard 2.0, .NET Framework 4.5/6.1 and Universal Windows Platform.
 
 ### Prepare client ID & client secret
 Browse [KKBOX Developer Website](https://developer.kkbox.com/) and create an developer account, then create an app to get the client ID and client secret.
